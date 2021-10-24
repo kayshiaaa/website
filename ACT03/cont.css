@@ -1,0 +1,91 @@
+body{
+    background-color: brown;
+    margin: 0px;
+    padding: 50px;
+    padding-left: 405px;
+    background: url("/images/beige.jpg");
+    background-repeat: repeat;
+}
+.contact{
+    width: 80%;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+.contact p{
+    color: brown;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer p2{
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 600px;
+    text-align: center;
+}
+.social a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+.social{
+    display: flex;
+    align-items: center;
+    padding-right: 27%;
+}
+.social a{
+    color: black;
+}
+.social a:hover,
+.social2 a:hover{
+    background-color: burlywood;
+    box-shadow: 2px 2px 12px gray;
+    transition: all ease 0.5s;
+    color: white;
+    transition: all ease 0.5s;
+}
+.social2{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY (-50%);
+}
+.social2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color: white;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px black;
+    color: #191919;
+    font-size: 20px;
+}

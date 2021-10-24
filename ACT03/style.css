@@ -1,0 +1,214 @@
+body{
+    background-color: #F5F5DD;
+    margin: 0px;
+    padding-top: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 95vh;
+    background-image: url("/images/vin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: salmon;
+    box-shadow: 2px 2px 12px black;
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    margin: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0D2B57;
+    font-size: 15px;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: #e6b4d7;
+}
+nav .active{
+    color: #e6b4d7;
+}
+.logo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#0D2B57;
+    font-size: 30px;
+}
+.logo:hover{
+    color: #685867;
+}
+.text-container p:nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: brown;
+    font-size: 22px;
+}
+.text-container p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 60px;
+}
+.text-container p:nth-child(3){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: teal;
+    font-size: 30px;
+    line-height: 30px;
+}
+.text-container p{
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+.text-container{
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%, -42%);
+}
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+button:active{
+    transform: scale(1.1);
+}
+.images{
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .id{
+    left: 45%;
+}
+.contact{
+    width: 100%;
+    height: 180px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact p{
+    color:brown;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.contact button{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer p{
+    font-size: 30px;
+    color: #191919;
+    line-height: 10px;
+}
+footer p2{
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 600px;
+    text-align: center;
+}
+.social a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #834333;
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+.social{
+    display: flex;
+    padding-bottom: 10%;
+}
+.social a{
+    color: #6082B6;
+}
+.social a:hover,
+.social2 a:hover{
+    background-color: burlywood;
+    box-shadow: 2px 2px 12px gray;
+    transition: all ease 0.5s;
+    color: white;
+    transition: all ease 0.5s;
+}
+.social2{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY (-50%);
+}
+.social2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color: #834333;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px black;
+    color: #191919;
+    font-size: 20px;
+}

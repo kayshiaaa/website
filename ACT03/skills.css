@@ -1,0 +1,184 @@
+body{
+    background-color: #F5F5DD;
+    margin: 0px;
+    padding: 0px;
+}
+.services-text{
+    height: 200px;
+    background-color: beige;
+    padding: 2% 10% 0px 10%;
+    text-align: center;
+}
+.services-text p:nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: 25px;
+    line-height: 10px;
+}
+.services-text p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+    line-height: 20px;
+}
+.services{
+    width: 500px;
+    margin: 50px 0px;
+}
+.box{
+    width: 500px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  width: 40%;
+}
+.box-container h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #B1865D;
+    font-size: 25px;
+    line-height: 10px;
+    text-align: center;
+    margin: 50px 0px;
+}
+.box1{
+    background-color: aliceblue;
+    background-size: cover;
+}
+.box1 p{
+    color: purple;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.skills-bar{
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px black;
+}
+.skills-bar .bar{
+    margin: 20px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-size: 17 px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skills-bar .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 1px gray,
+    0px 1px 1px gray;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #B1865D;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress-line.html span{
+    width: 60%;
+}
+.progress-line.css span{
+    width: 40%;
+}
+.progress-line.java span{
+    width: 50%;
+}
+.progress-line.c span{
+    width: 70%;
+}
+.progress-line.ccc span{
+    width: 30%;
+}
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    background: #000;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.progress-line.html span::after{
+    content: "60%"
+}
+.progress-line.css span::after{
+    content: "40%"
+}
+.progress-line.java span::after{
+    content: "50%"
+}
+.progress-line.c span::after{
+    content: "70%"
+}
+.progress-line.ccc span::after{
+    content: "30%"
+}
